@@ -13,7 +13,7 @@ const Topbar = () => {
         <span>Item 2</span>
         </Link>
         <Link href="#" className={styles.navItem}>
-            <span>Item 3</span>
+            <span>Item 3whooo</span>
         </Link>
       </div>
     </div>
