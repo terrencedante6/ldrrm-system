@@ -1,16 +1,8 @@
-import React from 'react';
-import Layout from '../layout'; 
-import styles from './report.module.scss';
+import React from "react";
+import styles from "./report.module.scss";
 
 const ReportPage = () => {
-  return (
-    <Layout contentClassName={styles.reportContent}>
-      <div>
-        Hello Report!
-
-      </div>
-    </Layout>
-  );
+  return <div>Hello Report!</div>;
 };
 
 export default ReportPage;

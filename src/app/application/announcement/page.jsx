@@ -1,16 +1,6 @@
-import React from 'react';
-import Layout from '../layout'; 
-import styles from './page.module.scss';
-
+import React from "react";
 const AnnouncementPage = () => {
-  return (
-    <Layout contentClassName={styles.announcementContent}>
-      <div>
-        Hello Announcement!
-
-      </div>
-    </Layout>
-  );
+  return <div>Hello Announcement!</div>;
 };
 
 export default AnnouncementPage;

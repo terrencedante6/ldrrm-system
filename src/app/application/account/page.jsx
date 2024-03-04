@@ -1,16 +1,8 @@
-import React from 'react';
-import Layout from '../layout'; 
-import styles from './account.module.scss';
+import React from "react";
+import styles from "./account.module.scss";
 
 const AccountPage = () => {
-  return (
-    <Layout contentClassName={styles.accountContent}>
-      <div>
-        Hello Account!
-
-      </div>
-    </Layout>
-  );
+  return <div>Hello Account!</div>;
 };
 
 export default AccountPage;
