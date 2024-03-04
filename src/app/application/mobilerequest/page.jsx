@@ -1,17 +1,7 @@
-
-import React from 'react';
-import Layout from '../layout'; 
-import styles from './mobilerequest.module.scss';
+import React from "react";
 
 const MobileRequestPage = () => {
-  return (
-    <Layout>
-      <div>
-        Hello Mobile request!
-
-      </div>
-    </Layout>
-  );
+  return <div>Hello Mobile request!</div>;
 };
 
 export default MobileRequestPage;

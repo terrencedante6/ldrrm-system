@@ -1,16 +1,8 @@
-import React from 'react';
-import Layout from '../layout'; 
-import styles from './setting.module.scss';
+import React from "react";
+import styles from "./setting.module.scss";
 
 const SettingPage = () => {
-  return (
-    <Layout contentClassName={styles.settingContent}>
-      <div>
-        Hello Setting!
-
-      </div>
-    </Layout>
-  );
+  return <div>Hello Setting!</div>;
 };
 
 export default SettingPage;

@@ -1,19 +1,36 @@
-import React from 'react';
-import Link from 'next/link';
-import { FaMobile, FaBox, FaFile, FaBullhorn, FaUsers, FaCog, FaSignOutAlt, FaHome, FaChartBar } from 'react-icons/fa';
-import styles from './sidebar.module.scss';
+import React from "react";
+import Link from "next/link";
+import {
+  FaMobile,
+  FaBox,
+  FaFile,
+  FaBullhorn,
+  FaUsers,
+  FaCog,
+  FaSignOutAlt,
+  FaHome,
+  FaChartBar,
+} from "react-icons/fa";
+import styles from "./sidebar.module.scss";
 
 const Sidebar = () => {
   const navItems = [
-    { text: 'Home', icon: <FaHome />, link: '/' },
-    { text: 'Dashboard', icon: <FaChartBar />, link: '/application/dashboard' }, 
-    { text: 'Mobile Request', icon: <FaMobile />, link: '/application/mobilerequest' },
-    { text: 'Stocks', icon: <FaBox />, link: '/application/stock' },
-    { text: 'Reports', icon: <FaFile />, link: '/application/report' },
-    { text: 'Announcements', icon: <FaBullhorn />, link: '/application/announcement' },
-    { text: 'Accounts', icon: <FaUsers />, link: '/application/account' },
-    { text: 'Settings', icon: <FaCog />, link: '/application/setting' },
-    { text: 'Logout', icon: <FaSignOutAlt />, link: '/application/logout' },
+    { text: "Dashboard", icon: <FaChartBar />, link: "/application" },
+    {
+      text: "Mobile Request",
+      icon: <FaMobile />,
+      link: "/application/mobilerequest",
+    },
+    { text: "Stocks", icon: <FaBox />, link: "/application/stock" },
+    { text: "Reports", icon: <FaFile />, link: "/application/report" },
+    {
+      text: "Announcements",
+      icon: <FaBullhorn />,
+      link: "/application/announcement",
+    },
+    { text: "Accounts", icon: <FaUsers />, link: "/application/account" },
+    { text: "Settings", icon: <FaCog />, link: "/application/setting" },
+    { text: "Logout", icon: <FaSignOutAlt />, link: "/" },
   ];
 
   return (
