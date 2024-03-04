@@ -32,7 +32,7 @@ const LandingPage = () => {
 
           <div className={styles.bigMessage}>
             <h1>Amlan's LDRRM Office's goal is to keep the community safe by managing hazards & preparing for disasters.</h1>
-            <p className={styles.smallText}>Climate Resilient & Disaster Ready PLEASE LET ME DONE SA FRONT END !</p>
+            <p className={styles.smallText}>Climate Resilient & Disaster Ready</p>
             <button className={styles.downloadButton}>Download App</button>
           </div>
 
