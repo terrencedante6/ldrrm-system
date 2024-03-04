@@ -1,0 +1,56 @@
+.topbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #333; 
+  z-index: -2;
+
+  display: flex;
+  align-items: center;
+  justify-content: flex-end; 
+  padding: 20px;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #fff; 
+
+  text-decoration: none;
+}
+
+.nav {
+  display: flex;
+  gap: 20px;
+}
+
+.navItem {
+  color: #fff;
+  font-size: 1rem;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  padding: 8px;
+  
+  text-decoration: none;
+
+  &:hover {
+    background-color: #555;
+  }
+}
+
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 250px;
+  height: 100%;
+  background-color: #333;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  z-index: 0;
+}
