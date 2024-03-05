@@ -1,7 +1,11 @@
+/*This part belongs to Dashboard*/
+
 .content-container {
   display: flex;
   flex-direction: column;
   width: 100%;
+  background-color: #0d151b;
+  height: 150%;
 }
 
 .flex-container {
@@ -10,3 +14,208 @@
   display: flex;
   background: color;
 }
+
+.dashboard-wrapper {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap; 
+  margin-top: 25px;
+  margin-left: 25px;
+  margin-right: 25px;
+}
+
+.dashboard-container {
+  background-color: #1b2933; 
+  padding: 34px;
+  width: calc(25% - 20px);
+  box-sizing: border-box;
+  border: 1px solid #2c4050; 
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.dashboard-container-large {
+  width: 50vw; 
+  height: 50vh; 
+}
+
+.dashboard-container-small {
+  width: 24.7vw; 
+  height: 50vh; 
+}
+
+/*This part belongs to mobilerequest*/
+
+.buttonContainer {
+  display: flex;
+  justify-content: space-around;
+  margin: 20px; 
+}
+
+.mobilerequest-container{
+  background-color: #141f27; 
+  height: 72.5vh;
+  width: calc(98% - 20px);
+  box-sizing: border-box;
+  border: 1px solid #2c4050; 
+  margin-bottom: 20px;
+  justify-content: space-between;
+  margin-left: 24px;
+  margin-right: 20px;
+
+  h2{
+    font-size: 10px;
+  }
+}
+
+.mobilerequest-container2{
+  background-color: #1b2933; 
+  height: 63vh;
+  width: calc(101% - 20px);
+  box-sizing: border-box;
+  border: 1px solid #2c4050; 
+  margin-bottom: 5px;
+  margin-left: 5px;
+  margin-right: 5px;
+  margin-top: 5px;
+}
+
+.button {
+  padding: 10px;
+  background-color: #1b2933;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-top: 23px;
+  margin-left: 24px;
+  margin-bottom: 5px;
+  border: 1px solid #2c4050; 
+
+  &:hover {
+    background-color: #555;
+  }
+}
+
+.button2{
+  padding: 10px;
+  background-color: #1b2933;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-left: 5px;
+  border: 1px solid #2c4050; 
+  
+  &:hover {
+    background-color: #555;
+  }
+}
+
+.msearch{
+  padding: 10px;
+  background-color: #1b2933;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-top: 5px;
+  margin-left: 5px;
+  border: 1px solid #2c4050; 
+  border-radius: 8px;
+  width: 9vw;
+}
+
+.msearch2{
+  padding: 10px;
+  background-color: #1b2933;
+  color: #555;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-top: 5px;
+  margin-left: 5px;
+  margin-right: 5vw;
+  border: 1px solid #2c4050; 
+  border-radius: 8px;
+  width: 9vw;
+
+  .button2{
+  color: #555;
+  }
+
+  &:hover {
+    background-color: #555;
+  }
+}
+
+.msearch3{
+  padding: 6px;
+  background-color: #1b2933;
+  color: #555;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-top: 5px;
+  margin-left: 5px;
+  border: 1px solid #2c4050; 
+  border-radius: 8px;
+  width: 4vw;
+
+  &:hover {
+    background-color: #555;
+  }
+}
+
+.msearch4{
+  padding: 10px;
+  background-color: #1b2933;
+  color: #555;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-top: 5px;
+  margin-left: 6vw;
+  border: 1px solid #2c4050; 
+  border-radius: 8px;
+  width: 9vw;
+
+  &:hover {
+    background-color: #555;
+  }
+}
+
+.excel-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px; 
+}
+
+th, td {
+  padding: 8px;
+  text-align: left;
+}
+
+th {
+  background-color: #1b2933;
+  color: #fff;
+}
+
+.span-row {
+  color: #818181;
+  font-size: 13px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  margin-left: 5px;
+  padding-right: 10px;
+  cursor: pointer;
+  text-decoration: none;
+  display: inline-block;
+}
+
+/* Add more styles as needed */
+
+
+
+/*Unknown Pa ang next i design*/

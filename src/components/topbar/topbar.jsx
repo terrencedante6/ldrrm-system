@@ -5,15 +5,16 @@ import styles from './topbar.module.scss';
 const Topbar = () => {
   return (
     <div className={styles.topbar}>
+      
       <div className={styles.nav}>
         <Link href="#" className={styles.navItem}>
-        <span>Item 1</span>
+        <span>Tubol</span>
         </Link>
         <Link href="#" className={styles.navItem}>
-        <span>Item 2</span>
+        <span>Igit</span>
         </Link>
         <Link href="#" className={styles.navItem}>
-            <span>Item 3</span>
+            <span>Ihi Dugo</span>
         </Link>
       </div>
     </div>
