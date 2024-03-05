@@ -1,5 +1,7 @@
 import { Inter } from "next/font/google";
 import "./globals.scss";
+import styles from "../app/landingstyle.module.scss"
+import Navbar from "../components/navbar/navbar";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -11,7 +13,16 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className={inter.className}>
+        <div className={styles.hero}>
+          <div className={styles.contentContainer}>
+            <div className={`${styles.landingContainer} ${styles.fullHeight}`}>
+              <Navbar/>
+              {children}
+            </div>
+          </div>
+        </div>
+      </body>
     </html>
   );
 }
