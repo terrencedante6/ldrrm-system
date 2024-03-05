@@ -3,9 +3,10 @@
 .content-container {
   display: flex;
   flex-direction: column;
+
   width: 100%;
   background-color: #0d151b;
-  height: 150%;
+  height: 100%;
 }
 
 .flex-container {
@@ -18,31 +19,49 @@
 .dashboard-wrapper {
   display: flex;
   justify-content: space-between;
-  flex-wrap: wrap; 
-  margin-top: 25px;
-  margin-left: 25px;
-  margin-right: 25px;
+  flex-wrap: wrap;
+  margin: 25px;
+}
+
+.req-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  padding: 40px 10px 0 10px;
+}
+.req-buttons {
+  width: 100%;
+  display: flex;
+  gap: 1rem;
+
+  button {
+    border-radius: 5px;
+    padding: 10px;
+  }
 }
 
 .dashboard-container {
-  background-color: #1b2933; 
+  background-color: #1b2933;
   padding: 34px;
   width: calc(25% - 20px);
   box-sizing: border-box;
-  border: 1px solid #2c4050; 
+  border: 1px solid #2c4050;
   margin-bottom: 20px;
   display: flex;
   justify-content: space-between;
 }
 
 .dashboard-container-large {
-  width: 50vw; 
-  height: 50vh; 
+  width: 50vw;
+  height: 50vh;
 }
 
 .dashboard-container-small {
-  width: 24.7vw; 
-  height: 50vh; 
+  width: 24.7vw;
+  height: 50vh;
 }
 
 /*This part belongs to mobilerequest*/
@@ -50,35 +69,29 @@
 .buttonContainer {
   display: flex;
   justify-content: space-around;
-  margin: 20px; 
+  margin: 20px;
 }
 
-.mobilerequest-container{
-  background-color: #141f27; 
-  height: 72.5vh;
-  width: calc(98% - 20px);
+.mobilerequest-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #141f27;
+  height: 100%;
+  width: auto;
   box-sizing: border-box;
-  border: 1px solid #2c4050; 
-  margin-bottom: 20px;
-  justify-content: space-between;
-  margin-left: 24px;
-  margin-right: 20px;
+  border: 1px solid #2c4050;
 
-  h2{
+  h2 {
     font-size: 10px;
   }
 }
 
-.mobilerequest-container2{
-  background-color: #1b2933; 
+.mobilerequest-container2 {
+  background-color: #1b2933;
   height: 63vh;
   width: calc(101% - 20px);
-  box-sizing: border-box;
-  border: 1px solid #2c4050; 
-  margin-bottom: 5px;
-  margin-left: 5px;
-  margin-right: 5px;
-  margin-top: 5px;
+  border: 1px solid #2c4050;
 }
 
 .button {
@@ -88,17 +101,14 @@
   border: none;
   cursor: pointer;
   transition: background-color 0.3s ease;
-  margin-top: 23px;
-  margin-left: 24px;
-  margin-bottom: 5px;
-  border: 1px solid #2c4050; 
+  border: 1px solid #2c4050;
 
   &:hover {
     background-color: #555;
   }
 }
 
-.button2{
+.button2 {
   padding: 10px;
   background-color: #1b2933;
   color: #fff;
@@ -106,14 +116,14 @@
   cursor: pointer;
   transition: background-color 0.3s ease;
   margin-left: 5px;
-  border: 1px solid #2c4050; 
-  
+  border: 1px solid #2c4050;
+
   &:hover {
     background-color: #555;
   }
 }
 
-.msearch{
+.msearch {
   padding: 10px;
   background-color: #1b2933;
   color: #fff;
@@ -122,12 +132,12 @@
   transition: background-color 0.3s ease;
   margin-top: 5px;
   margin-left: 5px;
-  border: 1px solid #2c4050; 
+  border: 1px solid #2c4050;
   border-radius: 8px;
   width: 9vw;
 }
 
-.msearch2{
+.msearch2 {
   padding: 10px;
   background-color: #1b2933;
   color: #555;
@@ -137,12 +147,12 @@
   margin-top: 5px;
   margin-left: 5px;
   margin-right: 5vw;
-  border: 1px solid #2c4050; 
+  border: 1px solid #2c4050;
   border-radius: 8px;
   width: 9vw;
 
-  .button2{
-  color: #555;
+  .button2 {
+    color: #555;
   }
 
   &:hover {
@@ -150,7 +160,7 @@
   }
 }
 
-.msearch3{
+.msearch3 {
   padding: 6px;
   background-color: #1b2933;
   color: #555;
@@ -159,7 +169,7 @@
   transition: background-color 0.3s ease;
   margin-top: 5px;
   margin-left: 5px;
-  border: 1px solid #2c4050; 
+  border: 1px solid #2c4050;
   border-radius: 8px;
   width: 4vw;
 
@@ -168,7 +178,7 @@
   }
 }
 
-.msearch4{
+.msearch4 {
   padding: 10px;
   background-color: #1b2933;
   color: #555;
@@ -177,7 +187,7 @@
   transition: background-color 0.3s ease;
   margin-top: 5px;
   margin-left: 6vw;
-  border: 1px solid #2c4050; 
+  border: 1px solid #2c4050;
   border-radius: 8px;
   width: 9vw;
 
@@ -188,11 +198,17 @@
 
 .excel-table {
   width: 100%;
+  height: 100%;
   border-collapse: collapse;
-  margin-top: 10px; 
+
+  tbody {
+    height: 100%;
+    overflow-y: scroll;
+  }
 }
 
-th, td {
+th,
+td {
   padding: 8px;
   text-align: left;
 }
@@ -213,5 +229,7 @@ th {
   text-decoration: none;
   display: inline-block;
 }
+
+/* Add more styles as needed */
 
 /*Unknown Pa ang next i design*/
